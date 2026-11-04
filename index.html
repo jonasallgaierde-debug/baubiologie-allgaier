@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baubiologie Allgaier – Gesundes Wohnen im Allgäu & Bodenseeregion</title>
-  <meta name="description" content="Johannes Allgaier, zertifizierter Baubiologe (IBN) in Schlier. Baubiologische Beratung, Schadstoffanalyse & gesundes Bauen im Allgäu, Ravensburg und Bodenseeregion. Jetzt Termin buchen.">
+  <meta name="description" content="Johannes Allgaier, zertifizierter Baubiologe (IBN) in Schlier. Baubiologische Beratung, Schadstoffanalyse & gesundes Bauen im Allgäu, Ravensburg und Bodenseeregion. Jetzt Kontakt aufnehmen.">
   <meta name="keywords" content="Baubiologie, Baubiologe, Schlier, Ravensburg, Allgäu, Bodensee, Schadstoffanalyse, Elektrosmog, Schimmel, gesundes Wohnen, gesundes Bauen">
   <meta name="author" content="Johannes Allgaier">
   <meta name="robots" content="index, follow">
@@ -1413,7 +1413,7 @@
       <li><a href="#ueber" onclick="closeNav()">Über mich</a></li>
       <li><a href="#ablauf" onclick="closeNav()">Ablauf</a></li>
       <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
-      <li><a href="#termin" onclick="closeNav()">Termin buchen</a></li>
+      <li><a href="https://wa.me/4915902152745" target="_blank" rel="noopener noreferrer" onclick="closeNav()">WhatsApp</a></li>
       <li><a href="#impressum" onclick="closeNav()">Kontakt</a></li>
     </ul>
     <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menü öffnen" aria-controls="navLinks" aria-expanded="false">
@@ -1616,8 +1616,8 @@
     <div class="process-steps">
       <div class="process-step reveal">
         <div class="step-number">1</div>
-        <h4>Termin buchen</h4>
-        <p>Du wählst einen passenden Termin direkt online – unkompliziert und ohne Wartezeit.</p>
+        <h4>Kontakt aufnehmen</h4>
+        <p>Du schreibst mir auf WhatsApp. Gemeinsam besprechen wir dein Anliegen und vereinbaren einen passenden Termin.</p>
       </div>
       <div class="process-step reveal" style="transition-delay:0.1s">
         <div class="step-number">2</div>
@@ -1682,120 +1682,14 @@
     </div>
   </section>
 
-  <!-- TERMIN BUCHEN -->
-  <section class="booking" id="termin">
-    <div class="section-header reveal">
-      <span class="section-label">Terminbuchung</span>
-      <h2>Termin vereinbaren</h2>
-    </div>
-
-    <div class="booking-layout reveal">
-
-      <!-- LEFT: Service + Calendar -->
-      <div>
-        <p style="font-size:0.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:.8rem">1. Dienstleistung wählen</p>
-        <div class="booking-services" id="serviceOptions">
-          <label class="service-option selected" onclick="selectService(this)">
-            <input type="radio" name="service" value="Baubiologische Beratung" checked>
-            <div class="service-dot"></div>
-            <div class="service-info">
-              <h4>🔍 Baubiologische Beratung</h4>
-              <p>Vor-Ort-Analyse deiner Wohn- oder Arbeitsräume · ca. 2–3 Std.</p>
-            </div>
-          </label>
-          <label class="service-option" onclick="selectService(this)">
-            <input type="radio" name="service" value="Schadstoffbekämpfung">
-            <div class="service-dot"></div>
-            <div class="service-info">
-              <h4>🛡️ Schadstoffbekämpfung</h4>
-              <p>Analyse und nachhaltige Beseitigung von Schadstoffen · nach Aufwand</p>
-            </div>
-          </label>
-          <label class="service-option" onclick="selectService(this)">
-            <input type="radio" name="service" value="Gesundes Bauen – Beratung">
-            <div class="service-dot"></div>
-            <div class="service-info">
-              <h4>🏡 Gesundes Bauen</h4>
-              <p>Planungsbegleitung für ein schadstoffarmes, gesundes Zuhause · nach Absprache</p>
-            </div>
-          </label>
-        </div>
-
-        <p style="font-size:0.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:.8rem;margin-top:1.5rem">2. Datum & Uhrzeit wählen</p>
-        <div class="calendar-wrap">
-          <div class="cal-header">
-            <button class="cal-nav" onclick="changeMonth(-1)">&#8249;</button>
-            <h3 id="calTitle"></h3>
-            <button class="cal-nav" onclick="changeMonth(1)">&#8250;</button>
-          </div>
-          <div class="cal-grid" id="calGrid"></div>
-          <div class="time-slots" id="timeSlots" style="display:none">
-            <h4>Verfügbare Zeiten</h4>
-            <div class="slots-grid" id="slotsGrid"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT: Contact form -->
-      <div>
-        <p style="font-size:0.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:.8rem">3. Kontaktdaten eingeben</p>
-
-        <div class="booking-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Vorname *</label>
-              <input type="text" id="fname" placeholder="Max" required>
-            </div>
-            <div class="form-group">
-              <label>Nachname *</label>
-              <input type="text" id="lname" placeholder="Mustermann" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>E-Mail-Adresse *</label>
-            <input type="email" id="email" placeholder="max@beispiel.de" required>
-          </div>
-          <div class="form-group">
-            <label>Telefonnummer</label>
-            <input type="tel" id="phone" placeholder="+49 …">
-          </div>
-          <div class="form-group">
-            <label>Adresse / Objekt (optional)</label>
-            <input type="text" id="address" placeholder="Straße, PLZ Ort">
-          </div>
-          <div class="form-group">
-            <label>Nachricht (optional)</label>
-            <textarea id="message" placeholder="Was beschäftigt dich? Besondere Hinweise zum Objekt …"></textarea>
-          </div>
-
-          <div class="booking-summary" id="bookingSummary">
-            <strong>Deine Auswahl:</strong><br>
-            Bitte Datum und Uhrzeit auswählen.
-          </div>
-
-          <div class="form-group" style="flex-direction:row;align-items:flex-start;gap:0.7rem;margin-top:0.5rem">
-            <input type="checkbox" id="privacyConsent" style="margin-top:3px;flex-shrink:0;accent-color:var(--forest);width:16px;height:16px;cursor:pointer">
-            <label for="privacyConsent" style="font-size:0.82rem;color:var(--text-mid);text-transform:none;letter-spacing:0;cursor:pointer;line-height:1.5">
-              Ich habe die <a href="#datenschutz" style="color:var(--forest);text-decoration:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Terminanfrage zu. *
-            </label>
-          </div>
-
-          <button class="btn-book" id="bookBtn" onclick="submitBooking()">Termin anfragen</button>
-          <p class="booking-note">Du erhältst eine Bestätigungsnachricht per E-Mail. Johannes meldet sich zur Bestätigung bei dir.</p>
-        </div>
-      </div>
-    </div>
+  <!-- WHATSAPP KONTAKT -->
+  <section class="why" id="kontakt">
+    <span class="section-label">Kontakt</span>
+    <h2>Schreib mir auf WhatsApp</h2>
+    <p>Du hast Fragen zur Baubiologie oder möchtest eine Beratung vereinbaren? Schreib mir direkt – wir besprechen dein Anliegen persönlich.</p>
+    <a class="btn-primary" href="https://wa.me/4915902152745" target="_blank" rel="noopener noreferrer">Auf WhatsApp schreiben</a>
+    <p style="margin-top:1.25rem;margin-bottom:0;font-size:.95rem">+49 1590 2152745</p>
   </section>
-
-  <!-- SUCCESS MODAL -->
-  <div class="modal-overlay" id="successModal">
-    <div class="modal">
-      <div class="modal-icon">🌿</div>
-      <h3>Anfrage gesendet!</h3>
-      <p>Vielen Dank für deine Anfrage. Johannes Allgaier wird sich in Kürze bei dir melden, um den Termin zu bestätigen.</p>
-      <button class="modal-close" onclick="document.getElementById('successModal').classList.remove('open')">Schließen</button>
-    </div>
-  </div>
 
   <!-- FOOTER / IMPRESSUM -->
   <footer id="impressum">
@@ -1808,6 +1702,7 @@
       <a href="mailto:baubiologie.allgaier@gmx.de">baubiologie.allgaier@gmx.de</a>
       <a href="tel:+4975294850212">07529 / 4850212</a>
       <a href="tel:+4915902152745">+49 1590 2152745</a>
+      <a href="https://wa.me/4915902152745" target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
       <a href="https://www.instagram.com/baubiologie_johannes_allgaier/" target="_blank">Instagram</a>
     </div>
     <div>
@@ -1837,7 +1732,7 @@
         Telefon: 07529 / 4850212</p>
 
         <h3 style="font-family:'Playfair Display',serif;color:var(--forest);margin:1.5rem 0 0.5rem">2. Erhebung und Verarbeitung personenbezogener Daten</h3>
-        <p>Im Rahmen des Terminbuchungsformulars werden folgende personenbezogene Daten erhoben: Vor- und Nachname, E-Mail-Adresse, Telefonnummer (optional), Anschrift des Objekts (optional) sowie eine freitextliche Nachricht (optional). Die Verarbeitung erfolgt ausschließlich zum Zweck der Bearbeitung der Terminanfrage und der darauf bezogenen Kontaktaufnahme. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung).</p>
+        <p>Wenn Sie uns per E-Mail, telefonisch oder über WhatsApp kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung Ihres Anliegens. Eine Online-Terminbuchung wird auf dieser Website nicht angeboten.</p>
 
         <h3 style="font-family:'Playfair Display',serif;color:var(--forest);margin:1.5rem 0 0.5rem">2a. Server-Logfiles</h3>
         <p>Bei jedem Aufruf der Website werden automatisiert technische Zugriffsdaten in sogenannten Server-Logfiles erfasst. Dies umfasst: IP-Adresse, Browsertyp und -version, Betriebssystem, Referrer-URL sowie Datum und Uhrzeit des Zugriffs. Diese Daten dienen ausschließlich der Gewährleistung der Betriebssicherheit und Stabilität der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Die Daten werden nach 7 Tagen automatisch gelöscht.</p>
@@ -1851,9 +1746,9 @@
         <p>Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung (HTTPS). Die Übertragung von Daten zwischen Ihrem Browser und dem Server erfolgt verschlüsselt und kann von Dritten nicht eingesehen werden.</p>
 
         <h3 style="font-family:'Playfair Display',serif;color:var(--forest);margin:1.5rem 0 0.5rem">3. Weitergabe an Dritte</h3>
-        <p><strong>EmailJS (EmailJS Ltd., Großbritannien):</strong> Zur technischen Zustellung der Terminanfrage per E-Mail wird der Dienst EmailJS eingesetzt. Die im Formular eingegebenen Daten werden zur E-Mail-Zustellung an Server von EmailJS übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO. Datenschutzerklärung: <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" style="color:var(--forest)">emailjs.com/legal/privacy-policy</a></p>
+        
 
-        <p style="margin-top:1rem"><strong>Supabase (Supabase Inc., USA):</strong> Zur Verwaltung der Terminverfügbarkeit wird der Dienst Supabase genutzt. Dabei wird ausschließlich der reservierte Zeitslot in Form von Datum und Uhrzeit gespeichert. Personenbezogene Daten werden dabei nicht übertragen. Supabase ist nach dem EU-US Data Privacy Framework zertifiziert. Datenschutzerklärung: <a href="https://supabase.com/privacy" target="_blank" style="color:var(--forest)">supabase.com/privacy</a></p>
+        <p style="margin-top:1rem"><strong>WhatsApp:</strong> Die WhatsApp-Links führen zu einem externen Dienst. Erst beim Öffnen eines Links wird WhatsApp aufgerufen. Für die dortige Datenverarbeitung gelten die <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style="color:var(--forest)">Datenschutzhinweise von WhatsApp</a>.</p>
 
         <p style="margin-top:1rem"><strong>Google Fonts (Google LLC, USA):</strong> Zur einheitlichen Darstellung von Schriftarten werden Webfonts des Dienstes Google Fonts eingebunden. Beim Laden der Seite stellt Ihr Browser eine Verbindung zu Google-Servern her, wobei Ihre IP-Adresse übertragen wird. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer konsistenten Website-Darstellung). Datenschutzerklärung: <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--forest)">policies.google.com/privacy</a></p>
 
@@ -2583,236 +2478,7 @@
     checkApproveParam();
 
 
-    // ── Kalender-State ──
-    let currentDate = new Date();
-    let selectedDate = null;
-    let selectedTime = null;
-    let selectedService = 'Baubiologische Beratung';
-
-    const DAYS = ['Mo','Di','Mi','Do','Fr','Sa','So'];
-    const MONTHS = ['Januar','Februar','März','April','Mai','Juni',
-                    'Juli','August','September','Oktober','November','Dezember'];
-
-    // Verfügbare Zeitslots (Mo–Fr)
-    const TIME_SLOTS = ['09:00','10:00','11:00','13:00','14:00','15:00','16:00'];
-
-    // Gebuchte Termine aus Supabase (wird beim Laden befüllt)
-    let bookedSlots = new Set();
-
-    function getAvailableDays(year, month) {
-      // Montag–Freitag, nicht in der Vergangenheit
-      const today = new Date();
-      today.setHours(0,0,0,0);
-      const days = new Set();
-      const d = new Date(year, month, 1);
-      while (d.getMonth() === month) {
-        const dow = d.getDay(); // 0=So, 6=Sa
-        if (dow !== 0 && dow !== 6 && d >= today) {
-          days.add(d.getDate());
-        }
-        d.setDate(d.getDate() + 1);
-      }
-      return days;
-    }
-
-    function renderCalendar() {
-      const year  = currentDate.getFullYear();
-      const month = currentDate.getMonth();
-      document.getElementById('calTitle').textContent = MONTHS[month] + ' ' + year;
-
-      const available = getAvailableDays(year, month);
-      const today = new Date(); today.setHours(0,0,0,0);
-
-      // First weekday of month (Monday-based)
-      const firstDay = new Date(year, month, 1).getDay();
-      const offset = (firstDay === 0) ? 6 : firstDay - 1;
-      const daysInMonth  = new Date(year, month + 1, 0).getDate();
-      const daysInPrev   = new Date(year, month, 0).getDate();
-
-      let html = DAYS.map(d => `<div class="cal-dow">${d}</div>`).join('');
-
-      // Prev month fill
-      for (let i = offset - 1; i >= 0; i--) {
-        html += `<div class="cal-day other-month">${daysInPrev - i}</div>`;
-      }
-
-      for (let d = 1; d <= daysInMonth; d++) {
-        const thisDate = new Date(year, month, d);
-        const isToday  = thisDate.getTime() === today.getTime();
-        const isPast   = thisDate < today;
-        const isAvail  = available.has(d) && !isPast;
-        const isSelD   = selectedDate &&
-                         selectedDate.getDate() === d &&
-                         selectedDate.getMonth() === month &&
-                         selectedDate.getFullYear() === year;
-
-        let cls = 'cal-day';
-        if (isPast) cls += ' past';
-        else if (isAvail) cls += ' available';
-        if (isToday) cls += ' today';
-        if (isSelD)  cls += ' selected';
-
-        const clickFn = isAvail ? `onclick="selectDay(${year},${month},${d})"` : '';
-        html += `<div class="${cls}" ${clickFn}>${d}</div>`;
-      }
-
-      // Next month fill
-      const total = offset + daysInMonth;
-      const remaining = total % 7 === 0 ? 0 : 7 - (total % 7);
-      for (let d = 1; d <= remaining; d++) {
-        html += `<div class="cal-day other-month">${d}</div>`;
-      }
-
-      document.getElementById('calGrid').innerHTML = html;
-    }
-
-    function changeMonth(delta) {
-      currentDate.setMonth(currentDate.getMonth() + delta);
-      selectedDate = null;
-      selectedTime = null;
-      document.getElementById('timeSlots').style.display = 'none';
-      updateSummary();
-      renderCalendar();
-    }
-
-    function selectDay(year, month, day) {
-      selectedDate = new Date(year, month, day);
-      selectedTime = null;
-      renderCalendar();
-      renderTimeSlots();
-      updateSummary();
-    }
-
-    function renderTimeSlots() {
-      const wrap = document.getElementById('timeSlots');
-      const grid = document.getElementById('slotsGrid');
-      if (!selectedDate) { wrap.style.display = 'none'; return; }
-      wrap.style.display = 'block';
-
-      const dateStr = formatDateKey(selectedDate);
-      grid.innerHTML = TIME_SLOTS.map(t => {
-        const key = `${dateStr}_${t}`;
-        const booked = bookedSlots.has(key);
-        const sel = selectedTime === t;
-        if (booked) return `<button class="slot-btn booked" disabled>${t}</button>`;
-        return `<button class="slot-btn${sel?' selected':''}" onclick="selectTime('${t}')">${t}</button>`;
-      }).join('');
-    }
-
-    function selectTime(time) {
-      selectedTime = time;
-      renderTimeSlots();
-      updateSummary();
-    }
-
-    function formatDateKey(d) {
-      return d.getFullYear() + '-' +
-             String(d.getMonth()+1).padStart(2,'0') + '-' +
-             String(d.getDate()).padStart(2,'0');
-    }
-
-    function formatDateDisplay(d) {
-      return DAYS[(d.getDay()+6)%7] + ', ' +
-             d.getDate() + '. ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear();
-    }
-
-    function updateSummary() {
-      const el = document.getElementById('bookingSummary');
-      if (!selectedDate || !selectedTime) {
-        el.innerHTML = '<strong>Deine Auswahl:</strong><br>Bitte Datum und Uhrzeit auswählen.';
-        return;
-      }
-      el.innerHTML =
-        `<strong>Dienstleistung:</strong> ${selectedService}<br>` +
-        `<strong>Datum:</strong> ${formatDateDisplay(selectedDate)}<br>` +
-        `<strong>Uhrzeit:</strong> ${selectedTime} Uhr`;
-    }
-
-    function selectService(label) {
-      document.querySelectorAll('.service-option').forEach(l => l.classList.remove('selected'));
-      label.classList.add('selected');
-      selectedService = label.querySelector('input').value;
-      updateSummary();
-    }
-
-    async function submitBooking() {
-      const fname   = document.getElementById('fname').value.trim();
-      const lname   = document.getElementById('lname').value.trim();
-      const email   = document.getElementById('email').value.trim();
-      const phone   = document.getElementById('phone').value.trim();
-      const address = document.getElementById('address').value.trim();
-      const msg     = document.getElementById('message').value.trim();
-
-      if (!fname || !lname || !email) {
-        alert('Bitte Vor- und Nachname sowie E-Mail-Adresse ausfüllen.');
-        return;
-      }
-      if (!selectedDate || !selectedTime) {
-        alert('Bitte Datum und Uhrzeit auswählen.');
-        return;
-      }
-      if (!validateEmail(email)) {
-        alert('Bitte eine gültige E-Mail-Adresse eingeben.');
-        return;
-      }
-      if (!document.getElementById('privacyConsent').checked) {
-        alert('Bitte stimme der Datenschutzerklärung zu, um fortzufahren.');
-        return;
-      }
-
-      const btn = document.getElementById('bookBtn');
-      btn.disabled = true;
-      btn.textContent = 'Wird gesendet …';
-
-      const templateParams = {
-        service:     selectedService,
-        date:        formatDateDisplay(selectedDate),
-        time:        selectedTime + ' Uhr',
-        name:        fname + ' ' + lname,
-        email:       email,
-        phone:       phone || '–',
-        address:     address || '–',
-        message:     msg || '–',
-        to_email:    'baubiologie.allgaier@gmx.de'
-      };
-
-      try {
-          const slotKey = `${formatDateKey(selectedDate)}_${selectedTime}`;
-          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
-          await saveSlotToDB(slotKey);
-          bookedSlots.add(slotKey);
-          showSuccess();
-      } catch (err) {
-        alert('Fehler beim Senden. Bitte versuche es erneut oder kontaktiere uns direkt per E-Mail.');
-        console.error(err);
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Termin anfragen';
-      }
-    }
-
-    function showSuccess() {
-      document.getElementById('successModal').classList.add('open');
-      // Reset
-      selectedDate = null;
-      selectedTime = null;
-      ['fname','lname','email','phone','address','message'].forEach(id => {
-        document.getElementById(id).value = '';
-      });
-      renderCalendar();
-      document.getElementById('timeSlots').style.display = 'none';
-      updateSummary();
-    }
-
-    function validateEmail(e) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
-    }
-
-    // Init – gebuchte Termine aus Supabase laden, dann Kalender rendern
-    (async () => {
-      bookedSlots = await loadBookedSlotsFromDB();
-      renderCalendar();
-    })();
+    function validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
   </script>
   <!-- COOKIE BANNER -->
   <div class="cookie-banner" id="cookieBanner">
