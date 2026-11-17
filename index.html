@@ -1542,62 +1542,6 @@
   </section>
 
   <!-- KUNDENSTIMMEN -->
-  <section class="testimonials" id="referenzen">
-    <div class="reveal">
-      <span class="section-label">Kundenstimmen</span>
-      <h2>Erfahrungen meiner Kunden</h2>
-    </div>
-
-    <!-- Angezeigte Bewertungen (aus Supabase, nur approved=true) -->
-    <div class="testimonials-grid" id="reviewsGrid">
-      <div style="grid-column:1/-1;text-align:center;color:rgba(255,255,255,0.4);font-size:0.9rem;padding:2rem 0" id="reviewsLoading">
-        Bewertungen werden geladen …
-      </div>
-    </div>
-
-    <!-- Bewertung schreiben -->
-    <div style="max-width:560px;margin:4rem auto 0" class="reveal">
-      <div class="review-form-card" style="background:rgba(255,255,255,0.07);border:1px solid rgba(168,197,160,0.2);border-radius:1.2rem;padding:2.2rem">
-        <h3 style="font-family:'Playfair Display',serif;color:white;font-size:1.3rem;margin-bottom:0.5rem">Bewertung hinterlassen</h3>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.45);margin-bottom:1.8rem">Deine Bewertung wird nach kurzer Prüfung hier veröffentlicht.</p>
-
-        <!-- Sternebewertung -->
-        <div style="margin-bottom:1.2rem">
-          <p style="font-size:0.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);margin-bottom:0.6rem">Bewertung *</p>
-          <div id="starPicker" style="display:flex;gap:0.4rem">
-            <span class="star-pick" data-val="1" onclick="setStars(1)">★</span>
-            <span class="star-pick" data-val="2" onclick="setStars(2)">★</span>
-            <span class="star-pick" data-val="3" onclick="setStars(3)">★</span>
-            <span class="star-pick" data-val="4" onclick="setStars(4)">★</span>
-            <span class="star-pick" data-val="5" onclick="setStars(5)">★</span>
-          </div>
-        </div>
-
-        <div id="reviewFields" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:0.8rem">
-          <div>
-            <label style="font-size:0.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);display:block;margin-bottom:0.4rem">Name *</label>
-            <input id="reviewName" type="text" placeholder="Max Mustermann" style="width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(168,197,160,0.25);border-radius:0.5rem;padding:0.65rem 0.9rem;color:white;font-family:'DM Sans',sans-serif;font-size:0.9rem">
-          </div>
-          <div>
-            <label style="font-size:0.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);display:block;margin-bottom:0.4rem">Ort (optional)</label>
-            <input id="reviewLocation" type="text" placeholder="Ravensburg" style="width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(168,197,160,0.25);border-radius:0.5rem;padding:0.65rem 0.9rem;color:white;font-family:'DM Sans',sans-serif;font-size:0.9rem">
-          </div>
-        </div>
-
-        <div style="margin-bottom:1.4rem">
-          <label style="font-size:0.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);display:block;margin-bottom:0.4rem">Deine Erfahrung *</label>
-          <textarea id="reviewText" placeholder="Schildere kurz deine Erfahrung …" rows="4" style="width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(168,197,160,0.25);border-radius:0.5rem;padding:0.65rem 0.9rem;color:white;font-family:'DM Sans',sans-serif;font-size:0.9rem;resize:vertical"></textarea>
-        </div>
-
-        <button onclick="submitReview()" id="reviewBtn" style="background:var(--sage);color:white;border:none;border-radius:0.4rem;padding:0.8rem 2rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;transition:background 0.2s;width:100%">
-          Bewertung absenden
-        </button>
-        <p id="reviewMsg" style="font-size:0.85rem;text-align:center;margin-top:0.8rem;min-height:1.2em"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ÜBER MICH -->
   <section class="about" id="ueber">
     <div class="about-portrait reveal">
       <div class="about-portrait-placeholder">
@@ -2489,7 +2433,6 @@
     }
 
     // Start
-    loadReviews();
     checkApproveParam();
 
 
